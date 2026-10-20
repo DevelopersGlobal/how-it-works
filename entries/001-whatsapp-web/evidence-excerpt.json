@@ -1,0 +1,1428 @@
+{
+ "evidence_id": "ev_5d5007a30bebab058bb72c260e1e107bb9cc85981e33f4e2a872edbf54f575cc",
+ "predicate_type": "rea.browser-scenario-capture",
+ "environment": {
+  "mode": "launch",
+  "process_ownership": "provider-owned",
+  "cleanup": "terminated-owned-process",
+  "product": "Chromium",
+  "version": "154.0.8037.57"
+ },
+ "scenario": {
+  "start_origin": "https://web.whatsapp.com",
+  "duration_ms": 42151,
+  "capture_config": {
+   "events": [
+    "console",
+    "network",
+    "page-errors",
+    "websockets",
+    "workers"
+   ],
+   "network_content": {
+    "request_body": false,
+    "response_body": true,
+    "header_values": true
+   }
+  }
+ },
+ "limitations": [
+  "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+  "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+  "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+  "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+  "Captured response-body bytes are the result of Playwright's Response.body() API. Playwright may satisfy that API with a credentialed follow-up load of the request URL when CDP has no body, so transaction and event links do not verify that retained bytes came from the original network transaction.",
+  "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+  "Storage values are hashed only after declared-secret redaction.",
+  "Some selected network content was unavailable; per-transaction content states retain the reason.",
+  "Network response metadata was omitted for request-44 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-44 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-45 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-45 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-46 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-46 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-46 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-42 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-47 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-47 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-47 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-48 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-49 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-50 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-51 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-52 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-53 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-54 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-55 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-56 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-57 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-58 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-59 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-60 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-61 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-62 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-63 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-51 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-51 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-48 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-48 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-49 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-49 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-53 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-53 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-62 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-62 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-58 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-58 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-50 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-50 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-59 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-59 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-56 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-56 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-52 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-52 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-54 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-54 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-55 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-55 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-60 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-60 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-57 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-57 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-61 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-61 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-63 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-63 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-64 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-64 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-64 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-65 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request metadata was omitted for request-66 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-65 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-65 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network response metadata was omitted for request-66 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-finished metadata was omitted for request-66 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-42 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-44 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-45 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-46 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-47 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-48 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-49 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-50 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-51 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-52 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-53 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-54 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-55 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-56 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-57 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-58 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-59 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-60 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-61 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-62 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-63 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-64 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-65 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Network request-unfinished metadata was omitted for request-66 because max-total-event-allocation-bytes was reached; network coverage is incomplete.",
+  "Browser event collection reached a selected resource budget; per-kind omissions and affected network transaction IDs are listed in events.omissions, and event coverage is incomplete."
+ ],
+ "events": [
+  {
+   "sequence": 1,
+   "step_index": 0,
+   "transaction_id": "request-1",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/",
+   "resource_type": "document",
+   "kind": "request"
+  },
+  {
+   "sequence": 2,
+   "step_index": 0,
+   "transaction_id": "request-1",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/",
+   "resource_type": "document",
+   "kind": "response"
+  },
+  {
+   "sequence": 4,
+   "step_index": 0,
+   "kind": "console",
+   "level": "warning",
+   "text": "Error with Permissions-Policy header: Unrecognized feature: 'attribution-reporting'.",
+   "url": null
+  },
+  {
+   "sequence": 5,
+   "step_index": 0,
+   "kind": "console",
+   "level": "warning",
+   "text": "Error with Permissions-Policy header: Unrecognized feature: 'bluetooth'.",
+   "url": null
+  },
+  {
+   "sequence": 6,
+   "step_index": 0,
+   "kind": "console",
+   "level": "warning",
+   "text": "Error with Permissions-Policy header: Unrecognized feature: 'shared-storage'.",
+   "url": null
+  },
+  {
+   "sequence": 7,
+   "step_index": 0,
+   "kind": "console",
+   "level": "warning",
+   "text": "Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'.",
+   "url": null
+  },
+  {
+   "sequence": 8,
+   "step_index": 0,
+   "kind": "console",
+   "level": "error",
+   "text": "The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy.",
+   "url": "https://web.whatsapp.com/"
+  },
+  {
+   "sequence": 9,
+   "step_index": 0,
+   "transaction_id": "request-2",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v5/yc/l/0,cross/MzxPixCA1-HGRLM5ENHN5kOB_OY8k1KqH.css",
+   "resource_type": "stylesheet",
+   "kind": "request"
+  },
+  {
+   "sequence": 10,
+   "step_index": 0,
+   "transaction_id": "request-3",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yR/r/eLgcBUdngJY.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 11,
+   "step_index": 0,
+   "transaction_id": "request-4",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4im0G4/yX/l/en_US-j/pky2eiGIH8VJ81U9dXLl3_xhmf9npstv92vFlJhMedjL10sPn3UVMiBIMj-ckjdoC9nhyXeOa3JV_GWGFXil8x1QDDfHzNpBmrk1xb3-XOhxLxibJkO_PKzLnRAS2jPAnPHIe0qnL2dG90HzAzEyj3AcqzfibXh0vdaWGso6pjbbzH2bV9RKrJiDbsG.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 12,
+   "step_index": 0,
+   "transaction_id": "request-5",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yY/r/QtG3JCvbF1p.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 13,
+   "step_index": 0,
+   "transaction_id": "request-6",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yH/r/gbz2pKvOKOu.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 14,
+   "step_index": 0,
+   "transaction_id": "request-7",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iQRp4/yJ/l/en_US-j/biWL4VgRlwLO2WMSUVsbCdMK9DCxCOQ2jIU9iKDfg-0l9EDcMwtjgmOAZtDz7WRZzDZ5kacEZru-NbF8dTOsL9IesMHHyUfsFwRdfEZ8E0s3VjeWSjRoJd0kUoX6QUCFEnkG4QMMBK4ERxFRxM49XI-MUohAwq_P-04_N0tDk4jry01VFR4JKtPeHr436Nl9eQtYUglSOJmFB6VcBZIt2h4GnNJToAel9pC5kVrGlblDVDR7WXCQ5tnRjnJNdke0clJzMzpjtuh4wos9pBTPUbN_XE5HxgdQFq66uj0hpBy57olT7s-XCwamb14RsoKZiCZp8pgh5q.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 15,
+   "step_index": 0,
+   "transaction_id": "request-8",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iol44/yB/l/en_US-j/Nl9ZYyREraxV9wpvQ5rsg5XM0rJpn7nAIgf5ZzSkPy3NWUUKocWarAuU8Fzn8lyVY6hRgxME01XdE_23LEffI1_XSac3ynBiM4FsdNshI4fB_kBG5Pz7vmDjrTXOAFg98MFB7KJoSQKFgmFOYAuspDhlhzZk-PQqXYsbbcLS2v3jZv7zfC5vFGT0p2_zdZJywGwzJ6i9SaU-4ORb_p_eB9xXy1Bmj0YAvs-ocQZE-Ea9b4bANxVVUi3_zFNHckb0pXIL6h44D6seh1uq5AXPQt2A1ctIfzspJfdtB1x7WEqEERYelt9J1BsxqBeQ-kMqLHCXmPk0ZW.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 16,
+   "step_index": 0,
+   "transaction_id": "request-9",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ip034/yK/l/en_US-j/XlNI1RTya8eWkFMXIPbqoNTpm0mOHLx7yK3cN6UdMI5xQQbTU7ABRmEKi57VzP8q0FT9ZjSzxa5TydBAG7j0bBZDUavI6BPAZ_nLVUuYEyW6C-9wOG39rwPJYMfK8hsd6bQO-WMC6Wj3N3eny5zQK6yMey3lDMFgF1VwxSSTRI23-Y57kCFGujikubOVusfbalE1wxkBzLOJCDNX71iKsn8dh0KRaUD8d069z17ANdTwiU8wlQ7rZQrzh2svrKxY4trxVOQnvTRwA9W_GX53GwiKfNuXclZJJ4oEKtT5ZEh28TgjUDfNdIH2jOr3seZ9tnW4W1qG4e.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 17,
+   "step_index": 0,
+   "transaction_id": "request-10",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/ye/r/r7Trz-K5QbN.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 18,
+   "step_index": 0,
+   "transaction_id": "request-11",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4igpM4/yD/l/en_US-j/mG7l9DnJfw6.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 19,
+   "step_index": 0,
+   "transaction_id": "request-12",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/data/manifest.json",
+   "resource_type": "manifest",
+   "kind": "request"
+  },
+  {
+   "sequence": 20,
+   "step_index": 0,
+   "transaction_id": "request-12",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/data/manifest.json",
+   "resource_type": "manifest",
+   "kind": "response"
+  },
+  {
+   "sequence": 22,
+   "step_index": 0,
+   "transaction_id": "request-12",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/data/manifest.json",
+   "resource_type": "manifest",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 24,
+   "step_index": 0,
+   "transaction_id": "request-2",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v5/yc/l/0,cross/MzxPixCA1-HGRLM5ENHN5kOB_OY8k1KqH.css",
+   "resource_type": "stylesheet",
+   "kind": "response"
+  },
+  {
+   "sequence": 26,
+   "step_index": 0,
+   "transaction_id": "request-5",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yY/r/QtG3JCvbF1p.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 28,
+   "step_index": 0,
+   "transaction_id": "request-5",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yY/r/QtG3JCvbF1p.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 30,
+   "step_index": 0,
+   "transaction_id": "request-7",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iQRp4/yJ/l/en_US-j/biWL4VgRlwLO2WMSUVsbCdMK9DCxCOQ2jIU9iKDfg-0l9EDcMwtjgmOAZtDz7WRZzDZ5kacEZru-NbF8dTOsL9IesMHHyUfsFwRdfEZ8E0s3VjeWSjRoJd0kUoX6QUCFEnkG4QMMBK4ERxFRxM49XI-MUohAwq_P-04_N0tDk4jry01VFR4JKtPeHr436Nl9eQtYUglSOJmFB6VcBZIt2h4GnNJToAel9pC5kVrGlblDVDR7WXCQ5tnRjnJNdke0clJzMzpjtuh4wos9pBTPUbN_XE5HxgdQFq66uj0hpBy57olT7s-XCwamb14RsoKZiCZp8pgh5q.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 32,
+   "step_index": 0,
+   "transaction_id": "request-7",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iQRp4/yJ/l/en_US-j/biWL4VgRlwLO2WMSUVsbCdMK9DCxCOQ2jIU9iKDfg-0l9EDcMwtjgmOAZtDz7WRZzDZ5kacEZru-NbF8dTOsL9IesMHHyUfsFwRdfEZ8E0s3VjeWSjRoJd0kUoX6QUCFEnkG4QMMBK4ERxFRxM49XI-MUohAwq_P-04_N0tDk4jry01VFR4JKtPeHr436Nl9eQtYUglSOJmFB6VcBZIt2h4GnNJToAel9pC5kVrGlblDVDR7WXCQ5tnRjnJNdke0clJzMzpjtuh4wos9pBTPUbN_XE5HxgdQFq66uj0hpBy57olT7s-XCwamb14RsoKZiCZp8pgh5q.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 34,
+   "step_index": 0,
+   "transaction_id": "request-1",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/",
+   "resource_type": "document",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 36,
+   "step_index": 0,
+   "transaction_id": "request-2",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v5/yc/l/0,cross/MzxPixCA1-HGRLM5ENHN5kOB_OY8k1KqH.css",
+   "resource_type": "stylesheet",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 37,
+   "step_index": 0,
+   "transaction_id": "request-13",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yy/r/s3KknyKHL5v.woff2",
+   "resource_type": "font",
+   "kind": "request"
+  },
+  {
+   "sequence": 39,
+   "step_index": 0,
+   "transaction_id": "request-13",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yy/r/s3KknyKHL5v.woff2",
+   "resource_type": "font",
+   "kind": "response"
+  },
+  {
+   "sequence": 41,
+   "step_index": 0,
+   "transaction_id": "request-13",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yy/r/s3KknyKHL5v.woff2",
+   "resource_type": "font",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 42,
+   "step_index": 0,
+   "transaction_id": "request-6",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yH/r/gbz2pKvOKOu.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 44,
+   "step_index": 0,
+   "transaction_id": "request-6",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yH/r/gbz2pKvOKOu.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 45,
+   "step_index": 0,
+   "transaction_id": "request-4",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4im0G4/yX/l/en_US-j/pky2eiGIH8VJ81U9dXLl3_xhmf9npstv92vFlJhMedjL10sPn3UVMiBIMj-ckjdoC9nhyXeOa3JV_GWGFXil8x1QDDfHzNpBmrk1xb3-XOhxLxibJkO_PKzLnRAS2jPAnPHIe0qnL2dG90HzAzEyj3AcqzfibXh0vdaWGso6pjbbzH2bV9RKrJiDbsG.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 47,
+   "step_index": 0,
+   "transaction_id": "request-4",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4im0G4/yX/l/en_US-j/pky2eiGIH8VJ81U9dXLl3_xhmf9npstv92vFlJhMedjL10sPn3UVMiBIMj-ckjdoC9nhyXeOa3JV_GWGFXil8x1QDDfHzNpBmrk1xb3-XOhxLxibJkO_PKzLnRAS2jPAnPHIe0qnL2dG90HzAzEyj3AcqzfibXh0vdaWGso6pjbbzH2bV9RKrJiDbsG.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 48,
+   "step_index": 0,
+   "transaction_id": "request-3",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yR/r/eLgcBUdngJY.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 50,
+   "step_index": 0,
+   "transaction_id": "request-3",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yR/r/eLgcBUdngJY.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 51,
+   "step_index": 0,
+   "transaction_id": "request-8",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iol44/yB/l/en_US-j/Nl9ZYyREraxV9wpvQ5rsg5XM0rJpn7nAIgf5ZzSkPy3NWUUKocWarAuU8Fzn8lyVY6hRgxME01XdE_23LEffI1_XSac3ynBiM4FsdNshI4fB_kBG5Pz7vmDjrTXOAFg98MFB7KJoSQKFgmFOYAuspDhlhzZk-PQqXYsbbcLS2v3jZv7zfC5vFGT0p2_zdZJywGwzJ6i9SaU-4ORb_p_eB9xXy1Bmj0YAvs-ocQZE-Ea9b4bANxVVUi3_zFNHckb0pXIL6h44D6seh1uq5AXPQt2A1ctIfzspJfdtB1x7WEqEERYelt9J1BsxqBeQ-kMqLHCXmPk0ZW.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 53,
+   "step_index": 0,
+   "transaction_id": "request-8",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iol44/yB/l/en_US-j/Nl9ZYyREraxV9wpvQ5rsg5XM0rJpn7nAIgf5ZzSkPy3NWUUKocWarAuU8Fzn8lyVY6hRgxME01XdE_23LEffI1_XSac3ynBiM4FsdNshI4fB_kBG5Pz7vmDjrTXOAFg98MFB7KJoSQKFgmFOYAuspDhlhzZk-PQqXYsbbcLS2v3jZv7zfC5vFGT0p2_zdZJywGwzJ6i9SaU-4ORb_p_eB9xXy1Bmj0YAvs-ocQZE-Ea9b4bANxVVUi3_zFNHckb0pXIL6h44D6seh1uq5AXPQt2A1ctIfzspJfdtB1x7WEqEERYelt9J1BsxqBeQ-kMqLHCXmPk0ZW.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 54,
+   "step_index": 0,
+   "transaction_id": "request-10",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/ye/r/r7Trz-K5QbN.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 56,
+   "step_index": 0,
+   "transaction_id": "request-10",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/ye/r/r7Trz-K5QbN.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 57,
+   "step_index": 0,
+   "transaction_id": "request-11",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4igpM4/yD/l/en_US-j/mG7l9DnJfw6.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 59,
+   "step_index": 0,
+   "transaction_id": "request-11",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4igpM4/yD/l/en_US-j/mG7l9DnJfw6.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 67,
+   "step_index": 0,
+   "transaction_id": "request-9",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ip034/yK/l/en_US-j/XlNI1RTya8eWkFMXIPbqoNTpm0mOHLx7yK3cN6UdMI5xQQbTU7ABRmEKi57VzP8q0FT9ZjSzxa5TydBAG7j0bBZDUavI6BPAZ_nLVUuYEyW6C-9wOG39rwPJYMfK8hsd6bQO-WMC6Wj3N3eny5zQK6yMey3lDMFgF1VwxSSTRI23-Y57kCFGujikubOVusfbalE1wxkBzLOJCDNX71iKsn8dh0KRaUD8d069z17ANdTwiU8wlQ7rZQrzh2svrKxY4trxVOQnvTRwA9W_GX53GwiKfNuXclZJJ4oEKtT5ZEh28TgjUDfNdIH2jOr3seZ9tnW4W1qG4e.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 69,
+   "step_index": 0,
+   "transaction_id": "request-9",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ip034/yK/l/en_US-j/XlNI1RTya8eWkFMXIPbqoNTpm0mOHLx7yK3cN6UdMI5xQQbTU7ABRmEKi57VzP8q0FT9ZjSzxa5TydBAG7j0bBZDUavI6BPAZ_nLVUuYEyW6C-9wOG39rwPJYMfK8hsd6bQO-WMC6Wj3N3eny5zQK6yMey3lDMFgF1VwxSSTRI23-Y57kCFGujikubOVusfbalE1wxkBzLOJCDNX71iKsn8dh0KRaUD8d069z17ANdTwiU8wlQ7rZQrzh2svrKxY4trxVOQnvTRwA9W_GX53GwiKfNuXclZJJ4oEKtT5ZEh28TgjUDfNdIH2jOr3seZ9tnW4W1qG4e.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 71,
+   "step_index": 1,
+   "transaction_id": "request-14",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4i2JT4/yH/l/en_US-j/dtAxJnqAExHrhhgjphsICrZ_pwD9noZBUhfyWPK11-yHrWjJ8L8ii8TRmnKqvCrEhoLQelWgiV0Hx3UD_icKVpbOIXajHj28KUIMgo1QIpstEnd_h3NV2RCUFJVHKa9Qyv5GOMDQOYwSzNi25PdC52gv1WNQcjWXOTY_AB5JGtDy51hLXtXfu7Kt4GFjCiYjF-aDE9RW9j7KmURitHs6D-yE3p59dVNcJDnmSWZ1F4oxYQ0dZnpioqH0wvH8jBlxeJdEKhFXjnfzTdYNlxTh42tSsRBwU9JYm5NyJrapSPIKWwkUVln3-an_hNfdwXdl3FYk31acuZ.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 72,
+   "step_index": 1,
+   "transaction_id": "request-15",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iUxN4/y5/l/en_US-j/4e0Zy5qFCb3cBr2b2X7POMP17R_g10IG7Xbww7vad0QdRbmtPZeCQ-8I3MTgBtV07im3Y8B91Tz4d8nNS4cJd5D0K9pAJIWzdxpfXj59NZEN6_qoMzZ0ZnUvqxwZeb6uqVZYEUc9oG3_1uQym8xVIVbs4CBvBHvit27VrX6zotKNpNlL_FZdRi8zsOSDdfKwugFxMtNJ_LrFM9rtj4NwSsf-0wrshXdy9EVb6f0-_Hf0PMnZbHsfQ7Qe1KPWsLvovRXLF19FoY5dKuoQUPiybmQZGQvdhzMUG-51HH_zQsXSds_kkOIpwKMMu7lxp3BxsOzVRrXrg3.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 73,
+   "step_index": 1,
+   "transaction_id": "request-16",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yk/r/N_FimxLgS2btzhl-QUgmHRqB8_U3ddz5VBrTyuA9t1ofVzqv3o2B82p4sFW0PTgjcCnibTaYOA9K2X95Z4sfkaYvuAsfv7hYp-ZFHMunQtQFwXrMsyLNXIt5s1ulPsewrR7rxOkUrNjAQ5v6j6B-0dGoh8hC4sM8pHXEUbIZPRGNzRjcFXR5T4x8MQf4edM1ml2BnAD_9e9H1JukwX5fE-PB_vJVKUb-R8qTq3QPoJAsAWgdmmU3iz0UHagE7rowLoIWXtr08LtRAC4BK0Z4Kt-qgQyWDCoIUpY77KLfjIkB67_ZKw9jj5nqjhWVf1N_cUVu92oDgl.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 74,
+   "step_index": 1,
+   "transaction_id": "request-17",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ilMy4/yH/l/en_US-j/4YC5w75W0cM.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 75,
+   "step_index": 1,
+   "transaction_id": "request-18",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iMx24/yg/l/en_US-j/CfC8yjyvNaVtKCcX9wjNAOuOD6oAfPy6l4rpxqON1tP0x7qPSgQhfB4W7glWTIp2_X.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 76,
+   "step_index": 1,
+   "transaction_id": "request-19",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ixKg4/yV/l/en_US-j/8jpSaAOVP51.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 77,
+   "step_index": 1,
+   "transaction_id": "request-20",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iPqW4/yD/l/en_US-j/WVtt0uYrf92.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 78,
+   "step_index": 1,
+   "transaction_id": "request-21",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iJsm4/yH/l/en_US-j/fdLf_fgSuhk.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 79,
+   "step_index": 1,
+   "transaction_id": "request-16",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yk/r/N_FimxLgS2btzhl-QUgmHRqB8_U3ddz5VBrTyuA9t1ofVzqv3o2B82p4sFW0PTgjcCnibTaYOA9K2X95Z4sfkaYvuAsfv7hYp-ZFHMunQtQFwXrMsyLNXIt5s1ulPsewrR7rxOkUrNjAQ5v6j6B-0dGoh8hC4sM8pHXEUbIZPRGNzRjcFXR5T4x8MQf4edM1ml2BnAD_9e9H1JukwX5fE-PB_vJVKUb-R8qTq3QPoJAsAWgdmmU3iz0UHagE7rowLoIWXtr08LtRAC4BK0Z4Kt-qgQyWDCoIUpY77KLfjIkB67_ZKw9jj5nqjhWVf1N_cUVu92oDgl.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 80,
+   "step_index": 1,
+   "transaction_id": "request-16",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yk/r/N_FimxLgS2btzhl-QUgmHRqB8_U3ddz5VBrTyuA9t1ofVzqv3o2B82p4sFW0PTgjcCnibTaYOA9K2X95Z4sfkaYvuAsfv7hYp-ZFHMunQtQFwXrMsyLNXIt5s1ulPsewrR7rxOkUrNjAQ5v6j6B-0dGoh8hC4sM8pHXEUbIZPRGNzRjcFXR5T4x8MQf4edM1ml2BnAD_9e9H1JukwX5fE-PB_vJVKUb-R8qTq3QPoJAsAWgdmmU3iz0UHagE7rowLoIWXtr08LtRAC4BK0Z4Kt-qgQyWDCoIUpY77KLfjIkB67_ZKw9jj5nqjhWVf1N_cUVu92oDgl.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 81,
+   "step_index": 1,
+   "transaction_id": "request-22",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yd/r/PfkSLByWV8O.webp",
+   "resource_type": "other",
+   "kind": "request"
+  },
+  {
+   "sequence": 82,
+   "step_index": 1,
+   "transaction_id": "request-23",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 83,
+   "step_index": 1,
+   "kind": "console",
+   "level": "error",
+   "text": "ErrorUtils caught an error:\n\n[storage] storage bucket persistence denied (aquire-persistent-storage-denied)\n\nSubsequent non-fatal errors won't be logged; see https://fburl.com/debugjs. {column: 17896, clientTime: 1792483932, extra: Object, guardList: Array(0), hash: ic5o4y}",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yR/r/eLgcBUdngJY.js"
+  },
+  {
+   "sequence": 84,
+   "step_index": 1,
+   "transaction_id": "request-24",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yY/r/pxeXQZRzD__.webp",
+   "resource_type": "other",
+   "kind": "request"
+  },
+  {
+   "sequence": 86,
+   "step_index": 1,
+   "kind": "worker-created",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931"
+  },
+  {
+   "sequence": 88,
+   "step_index": 1,
+   "transaction_id": "request-23",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 90,
+   "step_index": 1,
+   "transaction_id": "request-23",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 92,
+   "step_index": 1,
+   "transaction_id": "request-25",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/sw.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 93,
+   "step_index": 1,
+   "transaction_id": "request-26",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yC/r/KSaS6XqRFN6.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 94,
+   "step_index": 1,
+   "transaction_id": "request-27",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yc/r/RSBjkaN7QYI.js",
+   "resource_type": "other",
+   "kind": "request"
+  },
+  {
+   "sequence": 95,
+   "step_index": 1,
+   "transaction_id": "request-28",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?modules=WAWebLocalesCldrEmojiSuggestionEn&__user=0&__a=1&__req=1&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoiqejt6lobNacBNO8Ho-HiLRJPWkOlZ8h60FjaGWzkunx2A898qXj8EGQBQjCmgDFGJkWQ2ugyUKpymGCAUGUB7G8CyQHyGUgxi4AXCGiqmbWjg_yQUK9zbR-l4F94UjHypWAy9taiq2yV8gxx38G4F9GDUKEHGcGGAleGz94m9AxS6ooDz4l0Dxm8CDwYHxaFVE5qUhyd7Q-Z2o5u2-3aUF1a58C9g9okK4UlXwhFUjwlU4iE-2S3SlBwWByovyodUbAiew&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C58ZU0gEw&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 96,
+   "step_index": 1,
+   "transaction_id": "request-25",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/sw.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 98,
+   "step_index": 1,
+   "transaction_id": "request-29",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yk/r/b6c_t6ap_1M.js",
+   "resource_type": "other",
+   "kind": "request"
+  },
+  {
+   "sequence": 99,
+   "step_index": 1,
+   "transaction_id": "request-27",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yc/r/RSBjkaN7QYI.js",
+   "resource_type": "other",
+   "kind": "response"
+  },
+  {
+   "sequence": 101,
+   "step_index": 1,
+   "transaction_id": "request-27",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yc/r/RSBjkaN7QYI.js",
+   "resource_type": "other",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 103,
+   "step_index": 1,
+   "transaction_id": "request-30",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yI/r/7H3wYU6kQ3t.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 104,
+   "step_index": 1,
+   "transaction_id": "request-22",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yd/r/PfkSLByWV8O.webp",
+   "resource_type": "other",
+   "kind": "response"
+  },
+  {
+   "sequence": 106,
+   "step_index": 1,
+   "transaction_id": "request-22",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yd/r/PfkSLByWV8O.webp",
+   "resource_type": "other",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 107,
+   "step_index": 1,
+   "transaction_id": "request-24",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yY/r/pxeXQZRzD__.webp",
+   "resource_type": "other",
+   "kind": "response"
+  },
+  {
+   "sequence": 109,
+   "step_index": 1,
+   "transaction_id": "request-24",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/yY/r/pxeXQZRzD__.webp",
+   "resource_type": "other",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 110,
+   "step_index": 1,
+   "transaction_id": "request-31",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?nb_modules=WAWebToastManagerImpl&__user=0&__a=1&__req=2&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoiqejt6lobNacBNO8Ho-HiLRJPWkOlZ8h60FjaGWzkunx2A898qXj8EGQBQjCmgDFGJkWQ2ugyUKpymGCAUGUB7G8CyQHyGUgxi4AXCGiqmbWjg_yQUK9zbR-l4F94UjHypWAy9taiq2yV8gxx38G4F9GDUKEHGcGGAleGz94m9AxS6ooDz4l0Dxm8CDwYHxaFVE5qUhyd7Q-Z2o5u2-3aUF1a58C9g9okK4UlXwhFUjwlU4iE-2S3SlBwWByovyodUbAiew&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C58ZU0gEw&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 111,
+   "step_index": 1,
+   "transaction_id": "request-17",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ilMy4/yH/l/en_US-j/4YC5w75W0cM.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 113,
+   "step_index": 1,
+   "transaction_id": "request-17",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ilMy4/yH/l/en_US-j/4YC5w75W0cM.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 114,
+   "step_index": 1,
+   "transaction_id": "request-15",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iUxN4/y5/l/en_US-j/4e0Zy5qFCb3cBr2b2X7POMP17R_g10IG7Xbww7vad0QdRbmtPZeCQ-8I3MTgBtV07im3Y8B91Tz4d8nNS4cJd5D0K9pAJIWzdxpfXj59NZEN6_qoMzZ0ZnUvqxwZeb6uqVZYEUc9oG3_1uQym8xVIVbs4CBvBHvit27VrX6zotKNpNlL_FZdRi8zsOSDdfKwugFxMtNJ_LrFM9rtj4NwSsf-0wrshXdy9EVb6f0-_Hf0PMnZbHsfQ7Qe1KPWsLvovRXLF19FoY5dKuoQUPiybmQZGQvdhzMUG-51HH_zQsXSds_kkOIpwKMMu7lxp3BxsOzVRrXrg3.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 116,
+   "step_index": 1,
+   "transaction_id": "request-15",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iUxN4/y5/l/en_US-j/4e0Zy5qFCb3cBr2b2X7POMP17R_g10IG7Xbww7vad0QdRbmtPZeCQ-8I3MTgBtV07im3Y8B91Tz4d8nNS4cJd5D0K9pAJIWzdxpfXj59NZEN6_qoMzZ0ZnUvqxwZeb6uqVZYEUc9oG3_1uQym8xVIVbs4CBvBHvit27VrX6zotKNpNlL_FZdRi8zsOSDdfKwugFxMtNJ_LrFM9rtj4NwSsf-0wrshXdy9EVb6f0-_Hf0PMnZbHsfQ7Qe1KPWsLvovRXLF19FoY5dKuoQUPiybmQZGQvdhzMUG-51HH_zQsXSds_kkOIpwKMMu7lxp3BxsOzVRrXrg3.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 119,
+   "step_index": 1,
+   "transaction_id": "request-18",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iMx24/yg/l/en_US-j/CfC8yjyvNaVtKCcX9wjNAOuOD6oAfPy6l4rpxqON1tP0x7qPSgQhfB4W7glWTIp2_X.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 121,
+   "step_index": 1,
+   "transaction_id": "request-18",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iMx24/yg/l/en_US-j/CfC8yjyvNaVtKCcX9wjNAOuOD6oAfPy6l4rpxqON1tP0x7qPSgQhfB4W7glWTIp2_X.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 122,
+   "step_index": 1,
+   "transaction_id": "request-20",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iPqW4/yD/l/en_US-j/WVtt0uYrf92.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 124,
+   "step_index": 1,
+   "transaction_id": "request-20",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iPqW4/yD/l/en_US-j/WVtt0uYrf92.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 125,
+   "step_index": 1,
+   "transaction_id": "request-19",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ixKg4/yV/l/en_US-j/8jpSaAOVP51.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 127,
+   "step_index": 1,
+   "transaction_id": "request-19",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4ixKg4/yV/l/en_US-j/8jpSaAOVP51.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 128,
+   "step_index": 1,
+   "transaction_id": "request-28",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?modules=WAWebLocalesCldrEmojiSuggestionEn&__user=0&__a=1&__req=1&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoiqejt6lobNacBNO8Ho-HiLRJPWkOlZ8h60FjaGWzkunx2A898qXj8EGQBQjCmgDFGJkWQ2ugyUKpymGCAUGUB7G8CyQHyGUgxi4AXCGiqmbWjg_yQUK9zbR-l4F94UjHypWAy9taiq2yV8gxx38G4F9GDUKEHGcGGAleGz94m9AxS6ooDz4l0Dxm8CDwYHxaFVE5qUhyd7Q-Z2o5u2-3aUF1a58C9g9okK4UlXwhFUjwlU4iE-2S3SlBwWByovyodUbAiew&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C58ZU0gEw&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "response"
+  },
+  {
+   "sequence": 130,
+   "step_index": 1,
+   "transaction_id": "request-28",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?modules=WAWebLocalesCldrEmojiSuggestionEn&__user=0&__a=1&__req=1&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoiqejt6lobNacBNO8Ho-HiLRJPWkOlZ8h60FjaGWzkunx2A898qXj8EGQBQjCmgDFGJkWQ2ugyUKpymGCAUGUB7G8CyQHyGUgxi4AXCGiqmbWjg_yQUK9zbR-l4F94UjHypWAy9taiq2yV8gxx38G4F9GDUKEHGcGGAleGz94m9AxS6ooDz4l0Dxm8CDwYHxaFVE5qUhyd7Q-Z2o5u2-3aUF1a58C9g9okK4UlXwhFUjwlU4iE-2S3SlBwWByovyodUbAiew&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C58ZU0gEw&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 131,
+   "step_index": 1,
+   "transaction_id": "request-21",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iJsm4/yH/l/en_US-j/fdLf_fgSuhk.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 133,
+   "step_index": 1,
+   "transaction_id": "request-21",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4iJsm4/yH/l/en_US-j/fdLf_fgSuhk.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 134,
+   "step_index": 1,
+   "transaction_id": "request-30",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yI/r/7H3wYU6kQ3t.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 136,
+   "step_index": 1,
+   "transaction_id": "request-30",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yI/r/7H3wYU6kQ3t.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 139,
+   "step_index": 1,
+   "transaction_id": "request-31",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?nb_modules=WAWebToastManagerImpl&__user=0&__a=1&__req=2&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoiqejt6lobNacBNO8Ho-HiLRJPWkOlZ8h60FjaGWzkunx2A898qXj8EGQBQjCmgDFGJkWQ2ugyUKpymGCAUGUB7G8CyQHyGUgxi4AXCGiqmbWjg_yQUK9zbR-l4F94UjHypWAy9taiq2yV8gxx38G4F9GDUKEHGcGGAleGz94m9AxS6ooDz4l0Dxm8CDwYHxaFVE5qUhyd7Q-Z2o5u2-3aUF1a58C9g9okK4UlXwhFUjwlU4iE-2S3SlBwWByovyodUbAiew&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C58ZU0gEw&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "response"
+  },
+  {
+   "sequence": 141,
+   "step_index": 1,
+   "transaction_id": "request-31",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?nb_modules=WAWebToastManagerImpl&__user=0&__a=1&__req=2&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoiqejt6lobNacBNO8Ho-HiLRJPWkOlZ8h60FjaGWzkunx2A898qXj8EGQBQjCmgDFGJkWQ2ugyUKpymGCAUGUB7G8CyQHyGUgxi4AXCGiqmbWjg_yQUK9zbR-l4F94UjHypWAy9taiq2yV8gxx38G4F9GDUKEHGcGGAleGz94m9AxS6ooDz4l0Dxm8CDwYHxaFVE5qUhyd7Q-Z2o5u2-3aUF1a58C9g9okK4UlXwhFUjwlU4iE-2S3SlBwWByovyodUbAiew&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C58ZU0gEw&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 142,
+   "step_index": 1,
+   "transaction_id": "request-26",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yC/r/KSaS6XqRFN6.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 144,
+   "step_index": 1,
+   "transaction_id": "request-26",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yC/r/KSaS6XqRFN6.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 145,
+   "step_index": 1,
+   "transaction_id": "request-14",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4i2JT4/yH/l/en_US-j/dtAxJnqAExHrhhgjphsICrZ_pwD9noZBUhfyWPK11-yHrWjJ8L8ii8TRmnKqvCrEhoLQelWgiV0Hx3UD_icKVpbOIXajHj28KUIMgo1QIpstEnd_h3NV2RCUFJVHKa9Qyv5GOMDQOYwSzNi25PdC52gv1WNQcjWXOTY_AB5JGtDy51hLXtXfu7Kt4GFjCiYjF-aDE9RW9j7KmURitHs6D-yE3p59dVNcJDnmSWZ1F4oxYQ0dZnpioqH0wvH8jBlxeJdEKhFXjnfzTdYNlxTh42tSsRBwU9JYm5NyJrapSPIKWwkUVln3-an_hNfdwXdl3FYk31acuZ.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 147,
+   "step_index": 1,
+   "transaction_id": "request-14",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4i2JT4/yH/l/en_US-j/dtAxJnqAExHrhhgjphsICrZ_pwD9noZBUhfyWPK11-yHrWjJ8L8ii8TRmnKqvCrEhoLQelWgiV0Hx3UD_icKVpbOIXajHj28KUIMgo1QIpstEnd_h3NV2RCUFJVHKa9Qyv5GOMDQOYwSzNi25PdC52gv1WNQcjWXOTY_AB5JGtDy51hLXtXfu7Kt4GFjCiYjF-aDE9RW9j7KmURitHs6D-yE3p59dVNcJDnmSWZ1F4oxYQ0dZnpioqH0wvH8jBlxeJdEKhFXjnfzTdYNlxTh42tSsRBwU9JYm5NyJrapSPIKWwkUVln3-an_hNfdwXdl3FYk31acuZ.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 157,
+   "step_index": 1,
+   "transaction_id": "request-32",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/btmanifest/1050956675/whatsapp/main",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 158,
+   "step_index": 1,
+   "transaction_id": "request-29",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yk/r/b6c_t6ap_1M.js",
+   "resource_type": "other",
+   "kind": "response"
+  },
+  {
+   "sequence": 160,
+   "step_index": 1,
+   "transaction_id": "request-29",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yk/r/b6c_t6ap_1M.js",
+   "resource_type": "other",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 161,
+   "step_index": 1,
+   "transaction_id": "request-25",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/sw.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 162,
+   "step_index": 1,
+   "transaction_id": "request-33",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 163,
+   "step_index": 1,
+   "transaction_id": "request-34",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v4/init_script/?worker_type=MODULE&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 164,
+   "step_index": 1,
+   "transaction_id": "request-35",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yg/r/OSUYN1lopu0.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 165,
+   "step_index": 1,
+   "transaction_id": "request-36",
+   "method": "POST",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v4/rsrc/?worker_module=WAWebBackendWorkerV2Bundle",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 166,
+   "step_index": 1,
+   "transaction_id": "request-37",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/favicon/1x/favicon/v4/",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 167,
+   "step_index": 1,
+   "transaction_id": "request-32",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/btmanifest/1050956675/whatsapp/main",
+   "resource_type": "xhr",
+   "kind": "response"
+  },
+  {
+   "sequence": 169,
+   "step_index": 1,
+   "transaction_id": "request-32",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/btmanifest/1050956675/whatsapp/main",
+   "resource_type": "xhr",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 170,
+   "step_index": 1,
+   "transaction_id": "request-38",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?modules=WAWebCountriesLocaleEN&nb_modules=WDSLoadRobotoVariableFont&__user=0&__a=1&__req=4&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoh8zAThBm2Yiz9ssyaSfGQHZrs-BcBvi4hwakOGKER7BUgF22i6KQOaaJ9t4VBA9WqHleJ0DA8KbCoBGFFeaK9hWy9EJaUGK48kx9eVGACBy-AQfUJebyoOZvBhaihe4WUCuF8yniACwEKi48ogOaxaiqF-bGaWzaGF5jGEOh5yp8txC69UN5g9Uly9FUfaUiGuq1mK4ozhZfLgC1nwLwOKagixi9yk2m5bxe5uU4qu4U5u14GfwJwZBpoeFoC7UC3u2V4zE&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C4qzTw12y&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 171,
+   "step_index": 1,
+   "transaction_id": "request-35",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yg/r/OSUYN1lopu0.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 172,
+   "step_index": 1,
+   "transaction_id": "request-35",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yg/r/OSUYN1lopu0.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 173,
+   "step_index": 1,
+   "transaction_id": "request-37",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/favicon/1x/favicon/v4/",
+   "resource_type": "xhr",
+   "kind": "response"
+  },
+  {
+   "sequence": 174,
+   "step_index": 1,
+   "transaction_id": "request-37",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/favicon/1x/favicon/v4/",
+   "resource_type": "xhr",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 177,
+   "step_index": 1,
+   "kind": "worker-created",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931"
+  },
+  {
+   "sequence": 178,
+   "step_index": 1,
+   "kind": "worker-created",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v4/init_script/?worker_type=MODULE&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931"
+  },
+  {
+   "sequence": 179,
+   "step_index": 1,
+   "transaction_id": "request-33",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 181,
+   "step_index": 1,
+   "transaction_id": "request-33",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v1/init_script/?__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 183,
+   "step_index": 1,
+   "transaction_id": "request-39",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/favicon/1x/favicon/v4/",
+   "resource_type": "other",
+   "kind": "request"
+  },
+  {
+   "sequence": 184,
+   "step_index": 1,
+   "transaction_id": "request-34",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v4/init_script/?worker_type=MODULE&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 186,
+   "step_index": 1,
+   "transaction_id": "request-34",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v4/init_script/?worker_type=MODULE&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 188,
+   "step_index": 1,
+   "transaction_id": "request-36",
+   "method": "POST",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v4/rsrc/?worker_module=WAWebBackendWorkerV2Bundle",
+   "resource_type": "xhr",
+   "kind": "response"
+  },
+  {
+   "sequence": 190,
+   "step_index": 1,
+   "transaction_id": "request-36",
+   "method": "POST",
+   "url": "https://web.whatsapp.com/static_resources/webworker_v4/rsrc/?worker_module=WAWebBackendWorkerV2Bundle",
+   "resource_type": "xhr",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 191,
+   "step_index": 1,
+   "transaction_id": "request-38",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?modules=WAWebCountriesLocaleEN&nb_modules=WDSLoadRobotoVariableFont&__user=0&__a=1&__req=4&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoh8zAThBm2Yiz9ssyaSfGQHZrs-BcBvi4hwakOGKER7BUgF22i6KQOaaJ9t4VBA9WqHleJ0DA8KbCoBGFFeaK9hWy9EJaUGK48kx9eVGACBy-AQfUJebyoOZvBhaihe4WUCuF8yniACwEKi48ogOaxaiqF-bGaWzaGF5jGEOh5yp8txC69UN5g9Uly9FUfaUiGuq1mK4ozhZfLgC1nwLwOKagixi9yk2m5bxe5uU4qu4U5u14GfwJwZBpoeFoC7UC3u2V4zE&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C4qzTw12y&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "response"
+  },
+  {
+   "sequence": 193,
+   "step_index": 1,
+   "transaction_id": "request-38",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/ajax/bootloader-endpoint/?modules=WAWebCountriesLocaleEN&nb_modules=WDSLoadRobotoVariableFont&__user=0&__a=1&__req=4&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&dpr=1&__ccg=UNKNOWN&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__hsi=7698659863674557782&__dyn=7xe5WwlEnwn8K6EjBBwcm5U4e0C8dEc8co2qwJw5ux609vCwjE1EE2Cw8G11wBw5Zx62G3i0ha2l0Fw4Hw9O7U2czXwae4Ueo9U37wmE2exu16wa-0raazo11E2ZwrU6C0hq1ICwcu12wJwmEakUpwtU3Ywgo2qwae1Ywb6261Nw9q3m8wZ81zw&__csr=g552IePjl24IaNQYoBb2AHsRZhv5jEszPgx6AspfsZiR4h6Bdi44iYDVeSpml5iFdk-iEyFrFGBJ5FZOFIFbCrKrRO4lAKjRFnGcKiJ5jJZxvJ1SqrXxaqbmdzEgxG0Q8aQ9VAdLt9006q6o1My6ykcw9t00HCwo86602-i1tw2rUjw6y30KagoQ1Vg888odEkz6h0VAwrVHGq3Z3Oczg6LzU4e49u4U5oExk&__hsdp=gbq3hCwCUAaCMpMpoh8zAThBm2Yiz9ssyaSfGQHZrs-BcBvi4hwakOGKER7BUgF22i6KQOaaJ9t4VBA9WqHleJ0DA8KbCoBGFFeaK9hWy9EJaUGK48kx9eVGACBy-AQfUJebyoOZvBhaihe4WUCuF8yniACwEKi48ogOaxaiqF-bGaWzaGF5jGEOh5yp8txC69UN5g9Uly9FUfaUiGuq1mK4ozhZfLgC1nwLwOKagixi9yk2m5bxe5uU4qu4U5u14GfwJwZBpoeFoC7UC3u2V4zE&__hblp=08Zx20BCeCClopmEW9V4qe9PUSHilil94EllO0Z96ikEBf8gR5sp4OshYLq6Y-D9NRY80CnboKoNzYSJkler9ieGjGRJQAVykfgjgYJullGWBy_8AfoFKbCaiqOvXhdFbUPAHp-luEyhlrhopnFfLG48ojxe4F9GGjyWyKEOGGhkWGcAhoCi7okAzoB7z4l0Dxm8CDADxW4aUiGuqUgwxx-Uhyd7Q-Z2k1mwLwOKagixi9yk2m5bxe5uUauEKbDUyFo465o4iEyq2S3SlBwWByovyoixSqlhOxl4J2on28Gi&__sjsp=gbq3hCwCUAaCMpNI4C4qzTw12y&__comet_req=17&__spin_r=1050956675&__spin_b=trunk&__spin_t=1792483931",
+   "resource_type": "xhr",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 194,
+   "step_index": 1,
+   "transaction_id": "request-40",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yN/r/ABhQankIbtv.js",
+   "resource_type": "other",
+   "kind": "request"
+  },
+  {
+   "sequence": 198,
+   "step_index": 1,
+   "transaction_id": "request-39",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/favicon/1x/favicon/v4/",
+   "resource_type": "other",
+   "kind": "response"
+  },
+  {
+   "sequence": 200,
+   "step_index": 1,
+   "transaction_id": "request-39",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/favicon/1x/favicon/v4/",
+   "resource_type": "other",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 203,
+   "step_index": 1,
+   "transaction_id": "request-41",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yR/r/eLgcBUdngJY.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 204,
+   "step_index": 1,
+   "transaction_id": "request-42",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/ya/r/XlNI1RTya8eQQbTU7ABRmEkBzLOJCDNX7aUD8d069z177rZQrzh2svr3GwiKfNuXclWUUKocWarAuGWGFXil8x1Q7KJoSQKFgmFgvak_dU4egv1BsxqBeQ-kMbiWL4VgRlwL1xb3-XOhxLxbF8dTOsL9IeCwamb14RsoK.js",
+   "resource_type": "script",
+   "kind": "request"
+  },
+  {
+   "sequence": 205,
+   "step_index": 1,
+   "transaction_id": "request-41",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yR/r/eLgcBUdngJY.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 207,
+   "step_index": 1,
+   "transaction_id": "request-41",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yR/r/eLgcBUdngJY.js",
+   "resource_type": "script",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 208,
+   "step_index": 1,
+   "transaction_id": "request-43",
+   "method": "POST",
+   "url": "https://web.whatsapp.com/ajax/bz?__a=1&__ccg=UNKNOWN&__comet_req=17&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__hsi=7698659863674557782&__req=5&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__spin_b=trunk&__spin_r=1050956675&__spin_t=1792483931&__user=0&dpr=1&jazoest=21855&lsd=RHrmBT0-ZPDa7GCv3ymXug&ph=C3",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 209,
+   "step_index": 1,
+   "transaction_id": "request-42",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/ya/r/XlNI1RTya8eQQbTU7ABRmEkBzLOJCDNX7aUD8d069z177rZQrzh2svr3GwiKfNuXclWUUKocWarAuGWGFXil8x1Q7KJoSQKFgmFgvak_dU4egv1BsxqBeQ-kMbiWL4VgRlwL1xb3-XOhxLxbF8dTOsL9IeCwamb14RsoK.js",
+   "resource_type": "script",
+   "kind": "response"
+  },
+  {
+   "sequence": 212,
+   "step_index": 1,
+   "transaction_id": "request-40",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yN/r/ABhQankIbtv.js",
+   "resource_type": "other",
+   "kind": "response"
+  },
+  {
+   "sequence": 214,
+   "step_index": 1,
+   "transaction_id": "request-40",
+   "method": "GET",
+   "url": "https://static.whatsapp.net/rsrc.php/v4/yN/r/ABhQankIbtv.js",
+   "resource_type": "other",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 215,
+   "step_index": 1,
+   "transaction_id": "request-44",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/favicon/1x/favicon/v4/",
+   "resource_type": "other",
+   "kind": "request"
+  },
+  {
+   "sequence": 217,
+   "step_index": 1,
+   "transaction_id": "request-43",
+   "method": "POST",
+   "url": "https://web.whatsapp.com/ajax/bz?__a=1&__ccg=UNKNOWN&__comet_req=17&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__hsi=7698659863674557782&__req=5&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__spin_b=trunk&__spin_r=1050956675&__spin_t=1792483931&__user=0&dpr=1&jazoest=21855&lsd=RHrmBT0-ZPDa7GCv3ymXug&ph=C3",
+   "resource_type": "xhr",
+   "kind": "response"
+  },
+  {
+   "sequence": 219,
+   "step_index": 1,
+   "transaction_id": "request-43",
+   "method": "POST",
+   "url": "https://web.whatsapp.com/ajax/bz?__a=1&__ccg=UNKNOWN&__comet_req=17&__hs=20746.HYP%3Awhatsapp_comet_pkg.2.1...0&__hsi=7698659863674557782&__req=5&__rev=1050956675&__s=rk15nk%3Ab9e9db%3Ao3vymh&__spin_b=trunk&__spin_r=1050956675&__spin_t=1792483931&__user=0&dpr=1&jazoest=21855&lsd=RHrmBT0-ZPDa7GCv3ymXug&ph=C3",
+   "resource_type": "xhr",
+   "kind": "request-finished"
+  },
+  {
+   "sequence": 220,
+   "step_index": 1,
+   "transaction_id": "request-45",
+   "method": "GET",
+   "url": "https://web.whatsapp.com/emoji/v1/16/0/2/sprite/w/40/19.webp",
+   "resource_type": "xhr",
+   "kind": "request"
+  },
+  {
+   "sequence": 238,
+   "step_index": 1,
+   "kind": "websocket-opened",
+   "url": "wss://web.whatsapp.com/ws/chat"
+  },
+  {
+   "sequence": 240,
+   "step_index": 1,
+   "kind": "websocket-frame-sent",
+   "url": "wss://web.whatsapp.com/ws/chat",
+   "payload_bytes": 43,
+   "truncated": false
+  },
+  {
+   "sequence": 241,
+   "step_index": 1,
+   "kind": "websocket-frame-received",
+   "url": "wss://web.whatsapp.com/ws/chat",
+   "payload_bytes": 350,
+   "truncated": false
+  }
+ ],
+ "storage_snapshot": {
+  "cookies": [
+   {
+    "name": "wa_ul",
+    "domain": ".web.whatsapp.com",
+    "secure": true,
+    "http_only": true,
+    "same_site": "Lax"
+   },
+   {
+    "name": "wa_web_lang_pref",
+    "domain": ".web.whatsapp.com",
+    "secure": true,
+    "http_only": false,
+    "same_site": "Lax"
+   }
+  ],
+  "local_storage": [
+   "WAUnknownID",
+   "RSTData",
+   "WANoiseInfo",
+   "WALangPhonePref",
+   "WAWebWAMBeaconingSettings",
+   "WAWebEncKeySalt",
+   "WebEncKeySalt",
+   "Session",
+   "WANoiseInfoIv",
+   "banzai:last_storage_flush",
+   "whatsapp-mutex"
+  ],
+  "session_storage": [
+   "TabId",
+   "storage_test"
+  ]
+ },
+ "screenshot_sha256": "0cf82ca4e1bdfcffe9308307de11da353f150d27022a34463fb9290281ca9d31"
+}
